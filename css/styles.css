@@ -33,9 +33,9 @@ h1 {
   font-size: 1.2em; }
 
 header h1 {
-  font-size: 1.7em;
-  margin-left: 280px;
-  margin-top: 0; }
+  left: 40%;
+  margin: 0 auto;
+  position: absolute; }
 
 h2 {
   font-size: 1em; }
@@ -123,9 +123,6 @@ header {
 
 .footer-name, .footer-nav {
   display: inline-block; }
-
-.header-name {
-  position: absolute; }
 
 .main-header p {
   font-family: "Indie Flower", cursive; }
