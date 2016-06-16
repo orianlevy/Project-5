@@ -1,0 +1,148 @@
+////Mixins
+
+
+
+/* ---- Margin ---- */
+
+@mixin margin($vertical, $horizontal) {
+  
+  margin: #{$vertical} #{$horizontal};
+}
+
+/* ---- Padding ---- */
+
+@mixin padding($vertical, $horizontal) {
+  
+  padding: #{$vertical} #{$horizontal};
+}
+
+
+/* ---- Style for Tablets ---- */
+
+@mixin media_for_tablets() {
+
+@media (min-width: $tablet-size) {
+  .marketing, .search, .travel, .map, .photo, .calculator {
+    width: #{$medium-screen};
+    padding: 30px 10px; }
+
+  .footer-name {
+    float: left; }
+
+  .image-header {
+    float: right;
+    width: 20%; }
+
+  .main-header p {
+    width: 60%;
+    text-align: left;
+    margin: auto; }
+  
+  h1{
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .nav-name {
+    margin: 0 auto;
+    width: 30%; 
+    display: flex;;}
+
+  #hide-anchor {
+    display: none; }
+
+  img {
+    max-width: #{$medium-image}px;
+    max-height: #{$medium-image}px; }
+
+  .contact {
+    width: 70%; }
+
+  header {
+
+    display: none;
+  }
+
+  .nav-name {
+    padding-top: 15px;
+
+  }
+
+
+
+/* ---- Nested Sass Rules ---- */
+
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+    position: static; 
+    ul li {
+    	margin-left: 20px; 
+    }
+}
+
+  .nav-items {
+  display: inline-block;
+  margin: 0 220px;
+    width: 50%; 
+    ul li {
+    	display: inline-block;
+    	margin: 0 20px 0 0;
+    	padding: 0 0;
+    	background-color: $grey;
+    	text-align: center;
+    	a {
+    		background-color: $grey;
+    		margin: 0;
+    		padding: 0;
+    		border: 0;
+    		font: inherit;
+    		vertical-align: baseline;
+          }
+         }
+     }
+   }
+}
+
+
+
+/* ---- Style for Desktop ---- */
+
+@mixin media_for_desktop() {
+
+@media (min-width: $desktop-size) {
+  .marketing, .search, .travel, .map, .photo, .calculator {
+    width: $large-screen;
+    padding: 30px 10px; }
+
+  img {
+    max-width: #{$large-image}px;
+    max-height: #{$large-image}px; }
+
+  .contact {
+    width: 60%; }
+
+  .nav-name {
+    float: left;
+    width: auto; }
+
+  .nav-items {
+     margin: auto;
+    float: right;
+    width: auto; }
+
+  .footer-name, .footer-nav {
+    display: block; }
+
+  .body-container, .footer-container {
+    max-width: 1150px; }
+
+  .main-header p {
+    margin: 0;
+    width: 50%; } }	
+
+}

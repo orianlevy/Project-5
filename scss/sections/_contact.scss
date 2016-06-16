@@ -1,0 +1,25 @@
+//Contact
+
+
+
+.contact {
+  @extend %text-center;
+  @extend %full-width;
+  @include margin(0, auto) }
+
+.contact_header {
+  @extend %font-bold;
+  font-family: $nunito; }
+
+.contact_key {
+  @extend %display-inline-block;
+  font-family: $nunito; }
+
+.contact_value {
+  @extend %display-inline-block;
+  @extend %font-bold;
+  font-family: $nunito;
+  padding-left: 20px; }
+
+.contact_info {
+  font-family: $indie-flower; }

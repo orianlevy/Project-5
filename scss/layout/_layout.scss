@@ -1,0 +1,102 @@
+//Layout
+
+
+.col {
+  @extend %display-inline-block;
+  float: left; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.main-nav {
+  @extend %font-bold;
+  font-size: #{$main-nav-font-size}em;
+  font-family: $nunito; }
+
+.body-container {
+  @include margin(0, auto);
+  width: 95%; }
+
+.footer-container {
+  @extend %font-bold;
+  @include margin(0, auto);
+  width: 95%;
+  border-top: 3px solid $dark-gray;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-family: $nunito; }
+
+.bold {
+  @extend %font-bold; }
+
+#hide-anchor {
+  position: absolute;
+  right: 0px;
+  padding: 16px; }
+
+.nav-name {
+  @extend %text-center;
+  font-family: $indie-flower;
+  display:none;
+}
+
+.footer-name, .footer-nav {
+  display: inline-block; }
+
+.header-name {
+  position: absolute;
+}
+
+.main-header {
+  @extend %text-center;
+  @extend %full-width;
+  p {
+    font-family: $indie-flower;
+  }
+}
+
+
+.image-header {
+  @include margin(0, auto);
+  width: 50%;
+  padding-top: 10px; }
+
+/* ---- Nested Sass Rules ---- */
+
+.footer-nav {
+  display: none; 
+  ul {
+  @include padding(0, 0);
+      li {
+        @extend %display-inline-block;
+        margin-left: 5px; 
+      }
+  }
+}
+
+
+.nav-items ul {
+  padding: 0 0; 
+  li {
+    list-style-type: none;
+    a {
+      @extend %text-center;
+      @include margin(10px, 0);
+      @include padding(20px, 0);
+      display: block;
+      background-color: white;
+      list-style-type: none;
+    }
+  }
+}
+
+
+
+/* ---- Media Queries---- */
+
+@include media_for_tablets();
+@include media_for_desktop();

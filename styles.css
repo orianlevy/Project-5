@@ -1,0 +1,285 @@
+/* ---- Colors ---- */
+/* ---- Font Sizes ---- */
+/* ---- Font-Family ---- */
+/* ---- Image Sizes ---- */
+/* ---- Column Width ---- */
+/* ---- Media Screen Sizes ---- */
+.nav-name, .main-header, .nav-items ul li a, .portfolio_header, .marketing, .search, .travel, .map, .photo, .calculator, .contact {
+  text-align: center; }
+
+.col, .footer-nav ul li, .contact_key, .contact_value {
+  display: inline-block; }
+
+.main-header, .portfolio, .marketing, .search, .travel, .map, .photo, .calculator, .contact {
+  width: 100%; }
+
+.main-nav, .footer-container, .bold, .portfolio_header, .contact_header, .contact_value {
+  font-weight: bold; }
+
+/* ---- Margin ---- */
+/* ---- Padding ---- */
+/* ---- Style for Tablets ---- */
+/* ---- Style for Desktop ---- */
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #f0f5f5; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 1.2em; }
+
+header h1 {
+  font-size: 1.7em;
+  margin-left: 280px;
+  margin-top: 0; }
+
+h2 {
+  font-size: 1em; }
+
+h3 {
+  font-size: 1.1em; }
+
+img {
+  max-width: 280px;
+  max-height: 280px; }
+
+.nav-items {
+  display: none; }
+
+header {
+  width: 100%;
+  background: #a8abab;
+  height: 50px;
+  line-height: 50px; }
+
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 0px 15px 0px 15px;
+  color: #fff;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+.cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 0px 15px 0px 15px;
+  color: #fff;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+.col {
+  float: left; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.main-nav {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-family: "Nunito", sans-serif; }
+
+.body-container {
+  margin: 0 auto;
+  width: 95%; }
+
+.footer-container {
+  margin: 0 auto;
+  width: 95%;
+  border-top: 3px solid #F0F0F0;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-family: "Nunito", sans-serif; }
+
+#hide-anchor {
+  position: absolute;
+  right: 0px;
+  padding: 16px; }
+
+.nav-name {
+  font-family: "Indie Flower", cursive;
+  display: none; }
+
+.footer-name, .footer-nav {
+  display: inline-block; }
+
+.header-name {
+  position: absolute; }
+
+.main-header p {
+  font-family: "Indie Flower", cursive; }
+
+.image-header {
+  margin: 0 auto;
+  width: 50%; }
+
+/* ---- Nested Sass Rules ---- */
+.footer-nav {
+  display: none; }
+  .footer-nav ul {
+    padding: 0 0; }
+    .footer-nav ul li {
+      margin-left: 5px; }
+
+.nav-items ul {
+  padding: 0 0; }
+  .nav-items ul li {
+    list-style-type: none; }
+    .nav-items ul li a {
+      margin: 10px 0;
+      padding: 20px 0;
+      display: block;
+      background-color: white;
+      list-style-type: none; }
+
+/* ---- Media Queries---- */
+@media (min-width: 768px) {
+  .marketing, .search, .travel, .map, .photo, .calculator {
+    width: 50%;
+    padding: 30px 10px; }
+
+  .footer-name {
+    float: left; }
+
+  .image-header {
+    float: right;
+    width: 20%; }
+
+  .main-header p {
+    width: 60%;
+    text-align: left;
+    margin: auto; }
+
+  h1 {
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-top: 0; }
+
+  .nav-name {
+    margin: 0 auto;
+    width: 30%;
+    display: flex; }
+
+  #hide-anchor {
+    display: none; }
+
+  img {
+    max-width: 320px;
+    max-height: 320px; }
+
+  .contact {
+    width: 70%; }
+
+  header {
+    display: none; }
+
+  /* ---- Nested Sass Rules ---- */
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+    position: static; }
+    .footer-nav ul li {
+      margin-left: 20px; }
+
+  .nav-items {
+    display: inline-block;
+    margin: 0 220px;
+    width: 50%; }
+    .nav-items ul li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+      padding: 0 0;
+      background-color: #f0f5f5;
+      text-align: center; }
+      .nav-items ul li a {
+        background-color: #f0f5f5;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline; } }
+@media (min-width: 1024px) {
+  .marketing, .search, .travel, .map, .photo, .calculator {
+    width: 33.333%;
+    padding: 30px 10px; }
+
+  img {
+    max-width: 300px;
+    max-height: 300px; }
+
+  .contact {
+    width: 60%; }
+
+  .nav-name {
+    float: left;
+    width: auto; }
+
+  .nav-items {
+    margin: auto;
+    float: right;
+    width: auto; }
+
+  .footer-name, .footer-nav {
+    display: block; }
+
+  .body-container, .footer-container {
+    max-width: 1150px; }
+
+  .main-header p {
+    margin: 0;
+    width: 50%; } }
+.portfolio {
+  background-color: white;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: "Nunito", sans-serif; }
+
+.portfolio_header {
+  padding: 30px 0; }
+
+.marketing, .search, .travel, .map, .photo, .calculator {
+  padding: 20px 0; }
+
+.contact {
+  margin: 0 auto; }
+
+.contact_header {
+  font-family: "Nunito", sans-serif; }
+
+.contact_key {
+  font-family: "Nunito", sans-serif; }
+
+.contact_value {
+  font-family: "Nunito", sans-serif;
+  padding-left: 20px; }
+
+.contact_info {
+  font-family: "Indie Flower", cursive; }
+
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=styles.css.map */
