@@ -93,8 +93,12 @@
 }
 
 
-
 /* ---- Media Queries---- */
+@include image(); 
+@include columns();
+@include footer();
+@include navigation();
+@include contact();
+@include main();
+@include other_media();
 
-@include media_for_tablets();
-@include media_for_desktop();
