@@ -170,7 +170,7 @@
       width: 20%; }
 
     h1{
-      font-size: 1.2em;
+      font-size: #{$h1-font-size}em;
       margin-left: auto;
       margin-top: 0;
     }
